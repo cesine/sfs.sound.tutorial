@@ -1,0 +1,114 @@
+A:active {
+	COLOR: #0000cc
+}
+A:hover {
+	COLOR: #003399
+}
+A:link {
+	COLOR: #003399
+}
+A:visited {
+	COLOR: #003399
+}
+H1 {
+	COLOR: #191970; FONT-FAMILY: Univers,Helvetica,Arial,sans-serif
+}
+H2 {
+	COLOR: #191970; FONT-FAMILY: Univers,Helvetica,Arial,sans-serif
+}
+H3 {
+	COLOR: #191970; FONT-FAMILY: Univers,Helvetica,Arial,sans-serif
+}
+H4 {
+	COLOR: #191970; FONT-FAMILY: Univers,Helvetica,Arial,sans-serif
+}
+H5 {
+	COLOR: #191970; FONT-FAMILY: Univers,Helvetica,Arial,sans-serif
+}
+TH {
+	COLOR: #191970; FONT-FAMILY: Univers,Helvetica,Arial,sans-serif
+}
+P {
+	FONT-FAMILY: NewCenturySchlbk,Garamond,Times,serif
+}
+LI {
+	FONT-FAMILY: NewCenturySchlbk,Garamond,Times,serif
+}
+OL {
+	FONT-FAMILY: NewCenturySchlbk,Garamond,Times,serif
+}
+UL {
+	FONT-FAMILY: NewCenturySchlbk,Garamond,Times,serif
+}
+TD {
+	FONT-FAMILY: NewCenturySchlbk,Garamond,Times,serif
+}
+DL.ixentry {
+	FONT-FAMILY: NewCenturySchlbk,Garamond,Times,serif
+}
+CODE {
+	FONT-FAMILY: Courier,monospace
+}
+PRE {
+	FONT-FAMILY: Courier,monospace
+}
+CAPTION {
+	TEXT-ALIGN: left
+}
+.caption {
+	COLOR: #191970; FONT-FAMILY: Univers,Helvetica,Arial,sans-serif
+}
+.TOClist {
+	FONT-SIZE: small; FONT-FAMILY: Univers,Helvetica,Arial,sans-serif
+}
+.item {
+	TEXT-DECORATION: none
+}
+.ixentry {
+	FONT-FAMILY: NewCenturySchlbk,Garamond,Times,serif
+}
+.docentry {
+	FONT-SIZE: small; FONT-FAMILY: Helvetica,Arial,sans-serif
+}
+.CellBody {
+	FONT-FAMILY: Univers,Helvetica,Arial,sans-serif
+}
+.CellBodySmall {
+	FONT-SIZE: small; FONT-FAMILY: Univers,Helvetica,Arial,sans-serif
+}
+.CellHeading {
+	FONT-WEIGHT: bold; FONT-FAMILY: Univers,Helvetica,Arial,sans-serif
+}
+.CellHeadingCenter {
+	FONT-WEIGHT: bold; FONT-FAMILY: Univers,Helvetica,Arial,sans-serif
+}
+.CodeLineNumbered {
+	FONT-FAMILY: Courier,monospace
+}
+.Open1BulletList {
+	
+}
+.Open2BulletList {
+	
+}
+.Open3BulletList {
+	
+}
+.ParaIndent {
+	FONT-FAMILY: NewCenturySchlbk,Garamond,Times,serif
+}
+.ParaIndent2 {
+	FONT-FAMILY: NewCenturySchlbk,Garamond,Times,serif
+}
+.LeadIn2Para {
+	FONT-SIZE: small; FONT-FAMILY: Univers,Helvetica,Arial,sans-serif
+}
+.Caution {
+	
+}
+.Note {
+	
+}
+.TableHead {
+	FONT-SIZE: small
+}

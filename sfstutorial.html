@@ -1,0 +1,497 @@
+<!--
+FILENAME: 		sfstutorial.html
+RELATED FILES:		cooledittutorial.html
+				guidelines.html
+				segmentsamples.html
+AUTHOR: 			cesine
+CREATION DATE: 	Tuesday November 19 2003
+REVISION DATES:	Monday December 08 2003
+-->
+<HTML><HEAD><TITLE>SFS Tutorial & Guide to TTS for New Linguists</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<LINK media=screen href="standard.css" rel=stylesheet>
+<body>
+<p>Disclaimer: This is a tutorial I wrote for work, it might be helpful, it might not...</p>
+<center><h1>SFS Tutorial & Guide to TTS for New Linguists</h1></center>
+
+<p><h4>Processes involved in building a new voice:</h4></P>
+<blockquote>
+<h4>Recording Voice Talent</h4>
+<h4>Chunking : Using Cool Edit</h4>
+<h2><img src="images/arrow.jpg" border=0>Segmenting : Using SFS</h2>
+<blockquote>
+<h5>SFS tutorial</h5>
+<h5>Changing Dictionary & Scripts</h5>
+<h5>List of Contexts</h5>
+<h5>Difficult Segments</h5>
+</blockquote>
+<h4>Prosidy : Using SFS</h4>
+<h4> next...</h4>
+</blockquote>
+<hr>
+<!--
+<H3>Structure of this Document</h3>
+<BLOCKQUOTE>
+<P>This document serves as a central location for the procedures we have developed to acheive  efficient, accurate and consistant segmenting.</p><p>
+
+This document has been designed both as a self-guided training sesson for new segmenters and as a quick reference guide. We will begin by a quick tutorial of <a href="http://www.phon.ucl.ac.uk/resource/sfs/">SFS (Speech Filing System)</a> in order to familiarize you with the program you'll be working with before we go into the inherent difficulties of locating boundaries between sounds.
+</P>
+<P>
+
+Following the tutorial we will take a look at the "bigger issues" you should watch out for while segmenting. Unfortunatly <b>segmenting requires more than just marking segment boundaries</b>. Some typical issues include transitions between segments, identifying pauses, finding pronunciations that dont match the dictionary, and pronunciations that are not consitant for a given word. In addition to the difficulties that come with segmenting, every language will have its own details to pay attention to. You will find out about those from Linda. While most of the language specific issues will be known before we start segmenting, you should be prepared to find new issues during segmenting. You find some instructions on what to do in these situations.
+
+</P>
+<P>Following the section of "What to watch for" there is a quick reference guide for some of the visual cues we have found for classes of segments as well as certin "problem segments." You should skim this as part of your training and use it for reference later. If you discover other cues or other issues that should be included please make a screen shot (push Alt and "Print Screen" (near the Num Lock light on the right hand corner of your keyboard) of the spectrogram and send it to Linda outlining the visual cues you find interesting. (Click here for instructions.)
+</P><p>
+
+This self-guided training session is expected to take you between 2-3 hours. There are times listed next to most of the sections for your reference.</p><p>
+
+Perhaps the most important message we can give you is to have fun! Enjoy the beauty of spectrograms and the excitement of finding that evasive segment. Dont forget to join us for some prescribed "wrist-cross-training" at the foozball table.
+
+</BLOCKQUOTE>
+-->
+<h3>SFS tutorial</h3>
+<blockquote>SFS is a free program that allows linguists to view a sound file and make annotations to it (it also has other features). The program was developed by Mark Huckvale at UCL (University College London, England).
+
+<h4>Installation &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <font size=2> 10min</font></h4>
+<!--
+<BLOCKQUOTE>
+<img src="images/browse.jpg" border=0 align=right>
+<h5>Map drive S: to software on Bigiron</h5>
+<ul>
+<li>Open your <i>My Documents</i> folder.
+<li>Click on <i>Tools</i>, then on <i>Map Network Drive</i>.
+<li>For the <i>Drive</i> select <i>S:</i>.
+<li>For the <i>Folder</i> click <i>Browse...</i>
+<li>A window entitled <i>Browse For Folder</i> will pop up. Next to each icon there is a square box with either a <i>'+'</i> or <i>'-'</i>. Clicking on a '+' will allow you to see the files that are available in that folder.
+
+<li> Click on the square boxes until you u see a '-' next to <i>Entire Network, Microsoft Windows Network, </i>and<i> Nuance.</i> (This indicates that you are viewing all their contents.)
+<li>Scroll down the list of the computers until you get to <i>Bigiron</i>. Click on the square box until you see a '-'.
+<li>Scroll down the list of folders until you get to <i>SOFTWARE</i>. Click on the '+' next to it.
+<li>Click OK.
+<li>In the window entitled <i>Map Network Drive</i> make sure you see <i>"\\Bigiron\SOFTWARE"</i> as the <i>Folder</i>
+<li>Click <i>Finish</i>.
+
+</ul>
+
+<h5>Find the SFS installation file & and install</h5>
+<ul>
+<li>Go back to your <i>My Documents</i> window. In the top right corner of the window, underneath the little "Windows" icon there is a square button with a downfacing triangle. Click on the button.
+<li>A drop down menu will appear. Click on <i>software on 'bigiron' (S;)</i>
+<li>Scroll down to the folder <i>SFS</i>, click to open it.
+<li>Drag the installation file (probably called)<i>sfs-433.exe</i> onto your desktop.
+<li>Drag the folder called <i>SFS tutorial files</i> onto your desktop
+<li>Close the window entitled <i>S:\SFS</i>
+<li>Open the file you dragged to the desktop, follow the prompts to complete the installation.
+</ul>
+-->
+</BLOCKQUOTE>
+<h4>Opening a File</h4>
+<BLOCKQUOTE><p><!--You will have to Map a Network drive to the location of the sfs file for the language you are segmenting. Linda will tell you where these are. -->Today we will just use the files in <i>SFS tutorial files</i> which you have put on you desktop.
+<li>Open <i>SFS tutorial files</i>
+<li>Double click on the file named <i>e044.sfs</i>.
+<li>A window entitled like this will open:
+<img src="images/sfswin.jpg" border=0>
+<li>You will see three items in the list, two ANNOT (annotations), a SPEECH file.
+<li>On the tool bar there are two icons with blue sound waves (circled in red above),<i> click on either. </i> (The first is to display only the items you have checked, the second is to display all items. If you haven't checked any of the boxes all items will open.)
+<li>A window entitled <i>e044.sfs - Eswin</i> will open. This is where we segment the sound files.
+<img src="images/eswin1.jpg" border=0>
+</blockquote>
+<h4>Displaying the Waveform and Spectrogram</h4>
+<blockquote>
+<li>Click on the <i>wave</i> and <i>spectrogram</i> buttons <b><font color="#00cc00">(circled in green above)</font></b>
+</blockquote>
+<h4>Opening a Tier for Annotating</h4>
+<blockquote>
+<li>Next, click on the <i>Annotation</i> menu <b><font color="#aa58a1">(circled in pink above).</font></b>
+<li>Click on <i>Create/Edit Annotations</i> (see picture below).
+<li>Click <i>OK</i> in the <i>Annotation</i> window (the annotation name should be automatic).
+<img src="images/eswin2.jpg" border=0>
+</blockquote>
+<h4> Selecting an Interval of 500ms</h4>
+<blockquote>
+In the bottom right (see picture below) you can see the position of the <b><font color="blue">left cursor</font color></b> and the <b><font color="#00cc00">right cursor</font color></b>. You can also see the <b><font color="red">length of the selected interval</font color></b> (circled in red below), this will come in handy later. Circled in yellow is the total length of the sound file.
+<li>Click your <b><font color="blue">left mouse button</font color></b> at 1.5 on the <i>Time (s)</i> axis on the bottom of the window
+<li>Click your <b><font color="#00cc00">right mouse button</font color></b> at 2. (As shown in the window below)
+<img src="images/eswin3.jpg" border=0>
+<a name="length">
+<a name="cursorposition">
+
+<li>Hit <b>"z"</b> on your keyboard. (Z for Zoom)
+<li>This brings you to a viewing range of about 500 miliseconds, which is about right in order to see the details of the wave form, yet still see the larger patterns in the spectrogram that will show only from a distance.
+</ul></blockquote>
+<h4>The parts of a Eswin window</h4>
+<blockquote>
+<p>The following table shows you the parts of the Eswin window.</p>
+<table border=1><tr><td>
+<strong><font COLOR="#191970">Word Tier</font></strong><font size=2>
+Words speaker read (script)</td><td>
+<img src="images/eswin4.1.jpg" border=0></td></tr><tr><td>
+<strong><font COLOR="#191970">Segment Tier</font></strong><font size=2>
+Initial alignments made by an autosegmenter</td><td>
+<img src="images/eswin4.2.jpg" border=0></td></tr><tr><td>
+<strong><font COLOR="#191970">Soundwave</font></strong><font size=2>
+Useful for finding silences and vowel transitions.</td><td>
+<img src="images/eswin4.3.jpg" border=0></td></tr><tr><td>
+<strong><font COLOR="#191970">Spectrogram</font></strong><font size=2>
+Primary evidence for aspiration, nasals, fricatives and stops.<b>
+<font color="#bbbb00">release,
+<font color="#00cc00">aspiration,
+<font color="#226622">r-colored vowel,
+<font color="#00cccc">difuse noise,
+<font color="#aa58a1">high-frequency noise,
+<font color="#A52A2A">silence,
+<font color="#741717">F2 (high-low),
+<font color="#006600">F1(front-back),
+<font color="#550066">F0 (voicing band)</td><td>
+<img src="images/eswin4.4.jpg" border=0></td></tr><tr><td>
+<strong><font COLOR="#191970">Segment Tier <font color="#880000">
+(open for editing)</font></strong><font size=2>
+Where you move the segment boundaries.
+</td><td>
+<img src="images/eswin4.5.jpg" border=0>
+</td></tr></table>
+</blockquote>
+<h4>Lets Start Segmenting!&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <font size=2> 30min</font></h4>
+<blockquote><p>
+Your primary mission is to <b>find the boundaries between segments</b>, if you have trouble (and you often will) you can refer to the Segment Guide for tricks to find certain segments in certain contexts. </p>
+<p>Take a quick look at the picture above. In the soundwave and spectrogram sections we can a bunch of colored circles. These are briefly explained in the spectrogram section. We will refer back to these cirles during our tour of the file we have opened for editing. <i>(e044.sfs)</i></p><p>
+
+Go back to your window entitled <i>e044.sfs - Eswin</i></p>
+<ul>
+<li>Click once with your <b><font color="blue">left mouse button</font color></b> anywhere in the white space before the red "p" (in the bottom segment tier).
+</ul>
+<table border=1 cellpadding=5><tr><td>
+
+<h5>Context: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  pause(#:) | voiceless.stop(p) &nbsp; &nbsp; <a href="#context"><font size=1 color="#cc0000">Click here first</font></a> </h5>
+
+We want to find a boundary between a pause and a voiceless stop. You might already be gigling to yourself if you know that a voiceless stop is mostly silence :) We have to decide how much of that silence we should put into our "p." Here is a general rule: <b><font color="#A52A2A">voiceless stops preceded by a pause</font> should have as much silence as <font color="#007700">voiceless stops surronded by segments</font></b>. You have to look in the rest of the file to find an average amount of silence to include. In this example just follow these instructions:</p>
+<ul>
+<li>Hold down the <i>"Ctrl"</i> button and push your <i>right arrow</i> one time. This will put the <font color="blue">blue cursor</font> automaticaly on the "p" line so you can change its position.
+<li>Next, hold down the <i>Shift</i> button and push your <i>right arrow</i> repeatedly until the "p" is at 1.6098 seconds (you can find the position of the blue (left) cursor as <a href="#cursorposition">discussed previously</a>
+<li>Hit <i>"o"</i> once.
+</ul>
+</td><td rowspan=2>
+<img src="images/pu.jpg" border=0 align=right>
+</td></td><tr><td>
+<h5>Context: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; voiceless.stop(p) | voiced.continuant(u)</h5>
+<p>Congrats! You've just placed your first segment :) Now we have to find out where the "p" ends and the "u" begins. In the picture on the right you can see that we will <b>put the prevocalization into the "p."</b> The prevocalization shows as a shadow in the <b><font color="#550066">voicing band</font></b>. This is indicated in purple. </p>
+<ul>
+<li>Hold down the <i>"Ctrl"</i> button and push your <i>right arrow</i> one time. This will put the cursor automaticaly on the "u."
+<li>Hold down the <i>Shift</i> button and push your <i>right arrow</i> until the "u" is at 1.6816 seconds.
+</ul>
+</td></tr><tr><td colspan=2>
+<h5>Context: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; vowells(u) | voiced.fricatives(<img src="images/uvular.fricative.jpg" border=0>)</h5>
+<img src="images/ur.uvularfricative.jpg" border=0 align=right>
+<p>Now lets find the end of the "u" and the start of the "r." Nearly all "r" consonants will have an <font color="#226622"><b>r-colored vowel</b></font> before them. The brown cirles on the wave form show where to look for the "u." The green cirles show the transition to an "r." You can see the little spike in the middle of the period gets small and smaller until its gone in the "r." This vowel is in fact "u" only for about 30ms (miliseconds).</p><p>
+Notice the <font color="#00cccc"><b>frication</b></font> of the "r"(indicated in turqoise). We dont want frication in our vowels.
+<b>We try to keep vowels as "pure" as possible</b>. Meaning, <b>little frication, little r-coloring as possible</b>. You will probably have to listen to vowels more often than any other type of segment. We will give you some tips for listening later on.</p><p>
+All types of "r" are pretty hard to spot and to segment consistantly. You might be tempted to put the <b><font color="#550066">voiced area</font></b> into the vowel (indicated in purple), but "r"s are voiced. That there is <font color="#00cccc"><b>frication</b></font> and <font color="#226622"><b>r-coloredness</b></font> should deter you from this :) Do the following in the file your working on:
+<ul>
+<li>Hold down the <i>"Ctrl"</i> button and push your <i>right arrow</i> one time. This will put the cursor automaticaly on the "r."
+<li>Hold down the <i>Shift</i> button and push your <i>left arrow</i>until the "r" is at 1.7333 seconds
+<li>Hit <i>"o"</i> twice.
+</ul>
+</td></tr><tr><td colspan=2>
+<h5>Context: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; voiced.fricative(<img src="images/uvular.fricative.jpg" border=0>) | voiceless.fricative(s)</h5>
+<img src="images/rs.jpg" border=0 align=right>
+<p>
+This is a French "r" so it is actually a fricative /<img src="images/uvular.fricative.jpg" border=0>/ rather than an approximate /<img src="images/alveolar.approximate.jpg" border=0>/ (English) or a flap /<img src="images/flap.jpg" border=0>/ or trill /<img src="images/trill.jpg" border=0>/(Spanish). You will have to learn different cues depending on the phonetic realizations of "r" in different languages. This "r" will follow the patterns of a voiced fricative. Because the "r" is preceded by a vowel it will be at least partly <b><font color="#550066">voiced</font></b>. Because it is followed by an "s" it will probably  devoice near the end. </p><p>
+
+The devoiced section of this "r" is indicated in purple. Because the "r" devoices and the "s" is also voiceless it can be very difficult to find where one ends and the other begins. An "s" always has a dark splotch of <font color="#aa58a1"><b>high-frequency noise</b></font> at the top of the spectrogram. <b>The amplitude difference between "s" and any other fricative also might help you find the boundary.</b> (Indicated by the green arrow on the wave form.) Do the following in the file your working on:
+<ul>
+<li>Hold down the <i>"Ctrl"</i> button and push your <i>right arrow</i> one time. This will put the cursor automaticaly on the "s."
+<li>Hold down the <i>Shift</i> button and push your <i>left arrow</i> until the "s" is at 1.7884 seconds
+<li>Click at the "u" with your right mouse button (green cursor).
+<li>Click in the middle of the "s" (around 1.8) with your left mouse button (blue cursor).
+<li>Hit the <i>space bar</i> twice. You should be able to hear a bit of the "s" after the "r."
+<li>Move the blue cursor back to the "s" boundary. (<i>Ctrl-left arrow</i>)
+<li>Hit the <i>space bar</i> twice. You shouldn't be able to hear any "s."
+</ul>
+</td></tr><tr><td colspan=2>
+<a name="sa">
+<h5>Context: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; voiceless.fricative(s) | voiced.continuant(a)</h5>
+<img src="images/sa1.jpg" border=0 align=right>
+<img src="images/sa2.jpg" border=0 align=right>
+<p>Finding an vowel after an "s" is often very easy. Usualy the only cue you need is where the sine wave starts. For all boundaries between a voiceless element and a voiced <b>we leave the tiny <font color="#550066">prevoicing</font> out of the vowel</b> (indicated in purple).</p>
+
+<ul>
+<li>Hold down the <i>"Ctrl"</i> button and push your <i>right arrow</i> one time. This will put the cursor automaticaly on the "a."
+<li>Hold down the <i>Shift</i> button and push your <i>left arrow</i> until the "a" is at 1.8683 seconds
+</ul>
+</td></tr><tr><td colspan=2>
+<img src="images/ap.jpg" border=0 align=right>
+<h5>Context: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; voiced.segment(a) | stop(p)</h5>
+<p>
+Segmenting a vowel and a stop can also be fun. However, <b>the <font color="#550066">voicing shadow</font>  <i>must</i> be left in the following stop.</b>The voicin shadow (indicated in purple) is usually significanly quieter than the vowel and doesnt show any of the vowels formants.</p><p>
+
+For most vowels (execpt "i") you can see the little spikes in the middle of the period of the sine wave. This indicates that it is part of the real vowel, not part of the residual glotis-fluttering when the glotis stops voicing. The spike is indicated with a green rectangle.</p><p>
+
+Have a look at your sfs file. Can you find where you want to put the segment boundary? If you dont remember the commands to move the cursor, they are copied here for you one last time ;)
+<ul>
+<li>Hold down the <i>"Ctrl"</i> button and push your <i>right arrow</i> one time. This will put the cursor automaticaly on the "p."
+<li>Hold down the <i>Shift</i> button and push your <i>left arrow</i> until the "p" is at 1.9298 seconds
+</ul>
+ <p>Lets keep going until the end of this first phrase then we will release you to practice you new skills with the rest of this file. </p>
+</td></tr><tr><td colspan=2>
+<img src="images/pr.jpg" border=0 align=right>
+<h5>Context: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; stop(p) | voiced.fricative(<img src="images/uvular.fricative.jpg" border=0>)</h5>
+<p>
+Finding the boundary between any voiceless stop and a fricative can be <i>extreamly</i> difficult. You need to find where the aspiration ends and the frication begins. You should always listen to ~3 segments preceding and following the boundary.
+
+<ul>
+<li>Hold down the <i>"Ctrl"</i> button and push your <i>right arrow</i> one time. This will put the cursor automaticaly on the "r."
+<li>Hold down the <i>Shift</i> button and push your <i>left arrow</i> until the "r" is at 2.0053 seconds
+<li>Click on the preceding "a" with your right mouse button (green cursor).
+<li>Click in the middle of the "r" (around 2.03) with your left mouse button (blue cursor).
+<li>Hit the <i>space bar</i> twice. You should be able to hear a bit of the "r."
+<li>Move the blue cursor back to the "r" boundary. (<i>Ctrl-left arrow</i>)
+<li>Hit the <i>space bar</i> twice. You shouldn't be able to hear any "r."
+<li>Click on the following "j" with your right mouse button (green cursor).
+<li>Click in the middle of the "p" release (around 1.99) with your left mouse button (blue cursor).
+<li>Hit the <i>space bar</i> twice. You should be able to hear the release of the "p."
+<li>Move the blue cursor back to the "r" boundary. (<i>Ctrl-left arrow</i>)
+<li>Hit the <i>space bar</i> twice. You shouldn't be able to hear any "p."
+</ul>
+</p>
+The best way to find a boundary that isn't visually clear is to gradually change the area you listen to. You should also listen to both sides of the bounary to make sure that you dont hear one segment in the other. Listening to less than ~30mms will probably not help. You will have to listen to a few segemnts, concentrating on the one youre trying to hear. Put your green cursor ~3 segments proceding the boundary, put your blue cursor at a point where you hear both segments, move the blue cursor (<i>left arrow</i>) .5mms closer to the boundary, listen again, move .5mms closer and listen again. When you no longer hear the the second segment listen to the other side of the boundary using the same procedure.
+</td></tr><tr><td colspan=2>
+<img src="images/rschwa.jpg" border=0 align=right>
+<h5>Context: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; voiceless.fricative(<img src="images/uvular.fricative.jpg" border=0>) | voiced.continuant(*)</h5>
+<p>
+This particular <img src="images/uvular.fricative.jpg" border=0> is voiceless (because of the preceding "p"). Finding this boundary is the <a href="#sa">same as finding the boundary between an "s" and an "a."</a>
+
+<ul>
+<li>Hold down the <i>"Ctrl"</i> button and push your <i>right arrow</i> one time. This will put the cursor automaticaly on the "*."
+<li>Hold down the <i>Shift</i> button and push your <i>left arrow</i> until the "*" is at 2.0530 seconds
+</ul>
+</p>
+
+</td></tr><tr><td colspan=2>
+<img src="images/schwam2.jpg" border=0 align=right>
+<h5>Context: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; voiced.continuant(*) | nasal(m)</h5>
+<p>
+There will be a short <b><font color=orange>transition</b></font> where the wave form becomes regular (looks like an "m") and <b><font color="#550066">F1 & F2</font></b> disapear. We put this transition into the vowel, and start the nasal once <b><font color="#00cc00">F3</font></b> disapears and the spectrogram has only faint nasal formants. <a href="#nasalization"><b><font color="#110088">Nasalization</font></b></a> will usually show up half-way through the previous segment and into the following segments (indicated by the blue line around 2200Hz).
+<ul>
+<li>Hold down the <i>"Ctrl"</i> button and push your <i>right arrow</i> one time. This will put the cursor automaticaly on the "m."
+<li>Hold down the <i>Shift</i> button and push your <i>right arrow</i> until the "m" is at 2.1130 seconds
+</ul></p>
+
+
+</td></tr></table>
+</blockquote>
+<h4>Keyboard and Mouse</h4>
+<blockquote>
+<p>Before we finish this file lets give you some more commands to excersize your independance.</p>
+<h5><i>"Ctrl"  + arrow keys</i></h5>
+<p>
+By now you probably figured out that you can use the keyboard to <b>move your cursor from segment to segment</b>. Practice a bit: hold down <i>"Ctrl"</i> and push your <i>arrow keys</i> a couple of times in either direction. This is an easy way to surf through the sound file. <a href="#ctrlkey">(Note)</a></p>
+<h5><i>"Shift"  + arrow keys</i></h5>
+<p>
+Pushing shift in combination with the arrows will let you <b>move the segment by tiny intervals</b> to exactly where you want to be (well, pretty close).</p>
+<h5><i>arrow keys</i></h5>
+<p>You can <b>move your cursor</b> without moving a segment. Try holding down the left or right arrow key. This alows you to select exactly what you want to listen to, or puts you in a position to add a segment.</p>
+<h5><i>Quick Keys : Playing Intervals</i></h5>
+<blockquote>
+<dl>
+<dt><i>o</i>
+<dd>If you are going to use the keyboard to hop between segments <i>"o"</i> will become your favorite key. <i>"o"</i> <b>plays from the beginning of your screen until the <font color=blue>left cursor</font></b>. We will see how to use this later on in the Listening Section.
+<dt><i>space bar</i>
+<dd>The space bar will <b>play the interval between the left and right cursors</b>. If one of the cursors isnt present it will play <b><font color="#00cc00">from</font>/<font color=blue>to</font></b> the end of the screen. If neither is present it will play the entire screen.
+<dt><i>i</i>
+<dd>If you are in the middle of a sound file you can <b>listen to what comes before your screen</b> by pushing <i>"i"</i>.
+<dt><i>]</i>
+<dd>The left bracket will <b>play what comes after your screen</b>.
+</dl>
+</blockquote>
+<h5><i>Quick Keys : Navigating in the file</i></h5>
+<blockquote>
+<dl>
+<dt><i>z</i>
+<dd>This will <b>zoom in to the interval between the cursors</b> (z for zoom).
+<dt><i>u</i>
+<dd>This will <b>zoom out to the previous zoom level</b> (u for up).
+<dt><i>r</i>
+<dd>To <b>display the next screen-full</b> of segments hit <i>"r"</i> (r for right).
+<dt><i>l</i>
+<dd>To <b>display the previous screen-full</b> of segments hit <i>"l"</i> (l for left).
+</dl></blockquote>
+<h5><i>Quick Keys : Adding, Deleting and Changing Segments</i></h5>
+<blockquote>
+<dl>
+<dt><i>a</i>
+<dd>This will <b>add, delete or change a segment under the <font color="blue">blue cursor</font></b> (a for annotate). If there is a segment under the left cursor, pushing <i>"a"</i> will delete its value. A little information section will open on the bottom bar of the window (circled in blue). Type the segment you want then push <i>Enter</i>.
+<dt><i>b</i>
+<dd>This will <b>add, delete or change a segment under the <font color="#00cc00">green cursor</font></b>. This works the same as <i>"a"</i> above.
+<img src="images/annotate.jpg" border=0>
+</dl>
+</blockquote>
+<h5><i>Mouse button : <font color="blue">left</font></b></i></h5>
+<p>Clicking with the left mouse button places the blue cursor. You can drag a segment by clicking on the little verticle line next to it. This can be useful if the autosegmenter put a segment far from where it should be.
+<h5><i>Mouse button : <font color="#00cc00">right</font></b></i></h5>
+<p>Place the green cursor. Useful for selecting an interval for listening.
+</blockquote>
+<h4>Listening</h4>
+<blockquote>
+Listening to one segment usualy useless. This is why we rely mostly on visual cues. That said, here are some strategies we have used.
+
+<h5>Finding a /j/ or /w/</h5>
+
+
+<p>
+ You can select a part of the file using the left and right mouse buttons. You might want to do this either to listen to the segment or to zoom in. Lets talk about both:
+
+zooming
+
+
+listening
+
+<p>
+Now you've seen some of the considerations to keep in mind when searching for boundaries between segments. But what do you do when the segments listed dont match what you hear or see?? The first ANNOT line is generated from the scripts. By far the most problem is to have pauses (noted with #:) where they shouldnt be, or have no pause noted when it should be there! Here are examples of each: other problmes include, speaker uses a different word. (and situation in spanish)
+
+What to do: put an entry in the change scripts file
+
+The second ANNOT line is generated from the dictionary. if this has extra segments (in French we had to take out extra schwas, and insert liason consonants) or too few segments you should find the word in the dictionary. this is a rather complicated process. If the speaker says teh word realy different from the dictionary you will be forced to decide either to change hte dictionary entry, or make a multi word for that word. here are the things you need to consider:
+
+whatever you decide you must make note of it in the change dict file. note the files that you have identified as involved in this "problem word" if there are trends in the speaker (for example our spanish speaker was fifty fifty on english "r" and spanish "r" in english words. if a generaliztion such as this linda and the team should decide which group (english or spanish "r") should be in the dictionary, and which should be made into mutliwords. general problems should be caught as soon as possible after segmenting begins. or even before inorder to reduce the amount of backtracking we have to do.
+
+</blockquote></blockquote>
+<h3>What to Look For</h3>
+<blockquote>
+<h4>Voiceless Stops : After a Pause</h4>
+<table border=0><tr valign=top><td>
+<dl>
+<dt>Basic Info:
+<dd>Voiceless stops consist of silence and a burst.
+<dt><strong>Important:
+<dd> A voiceless stop will start in the silence that precedes the segment. To find the <a href=#length>length</a> of silence you need to look at other voiceless stops in the file and use an average of their lengths.</strong>
+
+<dt>Waveform Cues:<br>
+<dd>The red line indicates <b><font color="red">where you should look for silence.</font></b>
+<dt>Spectrogram Cues:<br>
+<dd>The green lines indicate the <b><font color="#00cc00">difuse noise</font></b> that is characteristic of <a href="#aspiration">aspiration</a>.
+<dd>The yellow line indicates the <b><font color="#bbbb00">release of the stop.</font></b>
+<dd>The blue cursor indicates the onset of the vowel.
+<dt>Auditory Cues:
+<dd>NA
+</dl>
+</td><td><center>
+Here is an example of a <b>/p/</b> from our first file:<br>
+<img src="images/#prs.jpg" border=0><p>
+</td></tr></table>
+<h4>Voiceless Stops : Word Internally</h3>
+
+</blockquote></blockquote>
+<h3>Guidelines while Segmenting</h3>
+<blockquote>
+<ul>
+<li>Any thing <b>shorter than 30mms is too short</b>. There will be times when you will encounter really short segments. The first thing you should do is look in the instructions file pertaining to the language you're segmenting, next look in the general instructions file. If there are no established instructions for what to do in this exact context ask Linda. Record the instructions she gave you in the instructions file in the following format.
+</ul>
+
+<h5>Adding to the List of Instructions</h5>
+Use this format when editing the instructions file.
+<ul>
+<pre>
+Language:	English
+Date:		YY-MM-DD
+Segment:	d
+Context:	n d s
+Instructions:	(copy instructions Linda gave you here)
+</pre>
+
+
+
+<!-If there is a "d" in the orthography keep the "d." If the "d" isnt audible and not in the orthography delete it from the segmentation tier. (Check dictionary to see if this will be changing the dictionary entry for the word, check to see which scripts the word appears in. Make note of both in the Change dict and Change scripts files respectively.)->
+
+<p>
+
+</blockquote><hr>
+<h3>Footnotes</h3>
+<dl>
+<a name="aspiration">
+<dt>Aspiration
+<dd><p>Time between the release of stops' closure until the vocal folds start vibrating. The amount of aspiration on voiceless stops <b>will vary by language</b>. (English has a lot, Spanish has little)</p>
+<a name="context">
+<dt><font color="#cc0000">Context: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  description(x) | description(y)</font>
+<dd><p>The descriptions indicate what type of segments this information applies to. The letter in parenthesis refers to the exact segment being discussed. In the first example the information can be applied to all voiceless stops, and we are discussing /p/ in particular.</p>
+<a name="ctrlkey">
+<dt><i>Ctrl + arrow key</i>
+<dd><p>Using <i>Ctrl + arrow key</i> only works when you have a red segment tier open for editing at the bottom of your window.</p>
+<dt>Fundamental Frequency
+<dd>
+<dt>F0 (voicing band)
+<dd><p>This is a dark band on the bottom of the spectrogram that indicates voiceing.</p>
+<a name="nasalization">
+<dt>Nasalization
+<dd><p>Unless a segment is specified as -nasal the velum will open in antisipation of the  nasal consonant and stay open until it has to be closed (ie, a segment that is specified as -nasal or silence). In this example the E: is assumed to be -nasal since nasalization is a contrastive feature for french vowels, or perhaps the velum closed in the middle of the E: to faciltiate making the voiced uvular trill <img src="images/uvular.fricative.jpg" border=0>. <p>
+Nasalization is a bit difficult to identify on the spectrogram but it usually shows up as faint formants at around 250, 2200 and 3500Hz (See <i>Speech Sounds and Features</i>, Gunnar Fant (p27) and <i>A Course in Phonetics</i>, Peter Ladefoged (p201) for more info.). You will probably be able to hear nasalization better than you can see it. Finding nasaliziation will be key when you have a string of liquids and nasals. (Both have similar wave forms and faint spectrograms.)</p>
+
+</dl>
+
+&nbsp;<p>
+&nbsp;<p>
+&nbsp;<p>
+&nbsp;<p>
+&nbsp;<p>
+&nbsp;<p>
+&nbsp;<p>
+&nbsp;<p>
+&nbsp;<p>
+
+</html>
+<!--
+
+
+basic sfs instructions
+Bit of background. instructions to follow. a tutorial maybe??
+-do this first so that they can understand wht they will be dealing with as far as the chagne dict files etc go,..
+"We will begin by looking at a typical sound file that you will have to segment"
+This introduction to building a TTS engine at nuance will take XX mintues to complete. This is the layout.
+
+
+outline of hte segmenting process
+-recording
+-chunking
+-segmenting
+-making changes in the dict and scripts based on the speaker's output
+
+use these for reference: skim them now above all, be aware when you might be facing a potential problem that is documented here. or that has not yet been documented and should be.
+
+
+guidelines for segemnting at nuance
+-etc etc etc
+-what to do when guidelines conflict.
+(a ranking of guidlines, to be perfected during hte next segemtnations)
+
+how to put entries in the change dict file
+-how to know which file to put it in, what other files will be helpfull to check.
+-only one team member in charge of changing the dictionaries, doesnt have to be the most superior, but the one most interested in consistancy
+when changes are made:
+-make sure that change is not in any scripts if if is, have those files segmented and marked in a seperate file as to why those files were segmented
+
+dependant changes file:
+-a file to list "problem words" words that the speaker isnt consistant with and must be either put in the dictionary for one of the pronoucnations and the others must be made multiwords.THIS WIL OFFTEN BE NECESSARY FOR BORROWINGS FROM OTHER LANGUAGES
+-when the dictionary changer finds a word liek this she/he must notify the rest of the team immediatly and have the already-segemtned and future-instantciations fixed immediatly. list the files that were involved with this decision if the decition of which for to keep shoul be changed.
+-aggree based on the languege whether the "english" pronunciatnon should be in the dictionary or hte "native" pronoucnaiton should be the dictionary form.
+example: "liberty" in spanish
+-beacause these changes are a pain in the butt if things have already been segemtned make sure that the dictionary changer must be on top of recomendations taht team members have seen
+
+
+
+
+how to put entries in the change scripts file
+-explain all the parts that go into scripts, pauses, prosidy etc so that team members can make appropriate recomendations.
+
+recommendations: supervisor provide 40+seconds of segmented audio exacly as he/she wishes it to be done
+each segmenter must review this audio and
+submit 30seconds of segemnted audio to the supervisor before continuing to segment
+every monday segmenter must submit 30 seconds of segmented audio for checking to the supervisor
+
+
+appendix, how to find an X(with screen shots)
+
+-wave form cues
+-spectrogram cues
+-audio cues
+
+-->
